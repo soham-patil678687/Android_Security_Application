@@ -1,0 +1,91 @@
+🔍 MODEL CONFIGURATIONS AND PERFORMANCE SUMMARY
+
+============================================
+1. Logistic Regression
+--------------------------------------------
+Parameters:
+- max_iter = 1000
+
+Performance:
+- Accuracy:     0.722600
+- Precision:    0.771863
+- Recall:       0.432375
+- F1 Score:     0.554266
+- AUC:          0.811527
+
+============================================
+2. Random Forest (Tuned via GridSearchCV)
+--------------------------------------------
+Best Parameters:
+- n_estimators = 200
+- max_depth = None
+- min_samples_split = 2
+
+Performance:
+- Accuracy:     0.900170
+- Precision:    0.877682
+- Recall:       0.871140
+- F1 Score:     0.874399
+- AUC:          0.963506
+
+============================================
+3. Support Vector Machine (SVM)
+--------------------------------------------
+Parameters:
+- probability = True
+
+Performance:
+- Accuracy:     0.773152
+- Precision:    0.777018
+- Recall:       0.604899
+- F1 Score:     0.680240
+- AUC:          0.858524
+
+============================================
+4. K-Nearest Neighbors (KNN)
+--------------------------------------------
+(Default Parameters)
+
+Performance:
+- Accuracy:     0.877655
+- Precision:    0.831804
+- Recall:       0.869010
+- F1 Score:     0.850000
+- AUC:          0.937284
+
+============================================
+5. Gradient Boosting (Tuned via GridSearchCV)
+--------------------------------------------
+Best Parameters:
+- n_estimators = 200
+- learning_rate = 0.2
+- max_depth = 7
+
+Performance:
+- Accuracy:     0.890824
+- Precision:    0.861996
+- Recall:       0.864750
+- F1 Score:     0.863371
+- AUC:          0.957773
+
+============================================
+6. Voting Classifier (Soft Voting)
+--------------------------------------------
+Base Models:
+- Logistic Regression
+- Random Forest (Tuned)
+- SVM
+- KNN
+- Gradient Boosting (Tuned)
+
+Voting Type:
+- voting = 'soft'
+
+Performance:
+- Accuracy:     0.900595
+- Precision:    0.887789
+- Recall:       0.859425
+- F1 Score:     0.873377
+- AUC:          0.954756
+
+============================================
