@@ -94,10 +94,7 @@ if not os.path.exists(pcap_file):
 
 # 11) Parse PCAP & build features
 local_nets = [
-    ip_network("10.0.0.0/8"),
-    ip_network("172.16.0.0/12"),
-    ip_network("192.168.0.0/16"),
-    ip_network("127.0.0.0/8"),
+    #add local ip addresses
 ]
 
 def is_local(ip):
